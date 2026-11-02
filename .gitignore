@@ -1,0 +1,50 @@
+# --- project-hub：大文件不进仓库（自动追加，勿删）---
+
+# 临时和缓存
+_tmp/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+node_modules/
+
+# 原始数据（按约定放 00_input/02_data_raw/，走网盘不进仓库）
+00_input/02_data_raw/
+*.tif
+*.tiff
+
+# 仿真/建模的大文件（动辄几百 MB，GitHub 放不下）
+*.mph
+*.msh
+*.cas
+*.dat
+*.h5
+*.wbpj
+*_files/
+*.cae
+*.odb
+*.prt
+*.CATPart
+*.stl
+*.scdocx
+*.trn
+*.rpy
+
+# 密钥、凭据：永远别提交
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa*
+id_ed25519*
+*.kdbx
+
+# 压缩包
+*.zip
+*.7z
+*.rar
+
+# 运行日志
+*.log
